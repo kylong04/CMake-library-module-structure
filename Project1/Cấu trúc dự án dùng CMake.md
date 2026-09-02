@@ -49,7 +49,7 @@ add_subdirectory(app)        # The executable
 #### Thứ tự biên dịch
 Luôn khai báo add_subdirectory() của thư viên trước file thực thi. CMkake sẽ đóng gói thư viện, công khai các đường dẫn Header rồi sau đó mới qua thư mục ```app``` để biên dịch và liên kết với my_library được tạo ở bước trước.
 ## Project1/my_library/CMakeLists.txt
-Chức năng: Tạo ra một đối tượng CMake (CMake target) có tên là my_libraryLib từ file source là src/Greeter.cpp
+Chức năng: Tạo ra một đối tượng CMake (CMake target) có tên là my_libraryLib từ file source là src/CoreLogic.cpp
 
 Đối tượng CMake này sử dụng các file header trong thư mục include tính từ đường dẫn CMakeList hiện tại đang thao tác (${CMAKE_CURRENT_SOURCE_DIR}). Vì các hàm định nghĩa(function prototype) trong file header được gọi  bởi chương trình main.c trong thư mục app, do đó cần cấu hình lan truyền header (propagation) ở chế độ PUBLIC để trong main.c có thể thấy được các hàm định nghĩa trong CoreLogic.h
 

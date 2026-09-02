@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Greeter.h"
+#include "CoreLogic.h"
 
 int main() {
   std::cout << get_greeting();
