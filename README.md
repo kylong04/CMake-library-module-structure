@@ -14,26 +14,25 @@ Hướng dẫn tạo thư viện my_library với cấu hình CMake module hóa 
 
 ## 1. Môi trường & Thiết lập
 
-**Môi trường**: chạy **môi trường Unix** trên Window.
+**Môi trường**: chạy **môi trường Unix** trên Window
 
-**Trình biên dịch & Build tool:** GCC/G++ (MinGW-w64) và CMake.
+**Trình biên dịch & Build tool:** GCC/G++ (MinGW-w64) và CMake
 
 **Công cụ cần cài đặt:**
 
-  1. **CMake**: Tải tool tại [CMake](https://cmake.org/download/).
+- **CMake**: Tải tool tại [CMake](https://cmake.org/download/) và lựa chọn phiên bản phù hợp với hệ điều hành của máy
 
-  2. **MinGW-w64**:
+- **MinGW-w64**: 
+    - **Cài đặt MinGW** tại [link](https://www.msys2.org/)   
+        1. Sau khi cài đặt `MinGW`, mở `MSYS2` và chạy lệnh bên dưới để cài đặt `GCC` toolchain (Lưu ý: Để toàn bộ đường dẫn cài đặt là mặc định)
+            ```powershell
+            pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
+            ```
+        2. Nhấn `Enter` để đồng ý cài đặt toàn bộ số lượng gói mặc định.
 
-  a. **Cài đặt MinGW** tại [link](https://www.msys2.org/)   
-  b. Sau khi cài đặt `MinGW`, mở `MSYS2` và chạy lệnh bên dưới để cài đặt `GCC` toolchain (Lưu ý: Để toàn bộ đường dẫn cài đặt là mặc định):
-  ```powershell
-  pacman -S --needed base-devel mingw-w64-ucrt-x86_64-toolchain
-  ```
-  c. Nhấn `Enter` để đồng ý cài đặt toàn bộ số lượng gói mặc định.
-
-  d. Nhấn `Y` để đồng ý bắt đầu cái đặt.
+        3. Nhấn `Y` để đồng ý bắt đầu cái đặt.
   
-  e. Thêm đường dẫn vào môi trường của Windows:
+        4. Thêm đường dẫn vào môi trường của Windows:
   
   - Truy cập `Windows search` tìm kiếm `Edit environment variables for your account` .
   
