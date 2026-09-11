@@ -1,9 +1,9 @@
 # Hướng dẫn cấu hình và biên dịch dự án C++ với CMake & MinGW
 
-Dự án sử dụng thư viện my_library để build một chương trình đơn giản nhằm demo thiết kế thư viện theo hướng module hóa
+Dự án sử dụng thư viện `my_library` để build một chương trình đơn giản nhằm demo thiết kế thư viện theo hướng module hóa
 
 ## Mục tiêu
-Hướng dẫn tạo thư viện my_library với cấu hình CMake module hóa (modularization).
+Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hóa (modularization).
 
 Ưu điểm:
 
