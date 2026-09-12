@@ -168,7 +168,7 @@ cmake -G "MinGW Makefiles" ..
 -- Generating done (0.0s)
 -- Build files have been written to: <path/to/project>/Project1/build
 ```
-### Build & Compilation
+### Biên dịch và build file thực thi
 ```powershell
 mingw32-make 
 ```
