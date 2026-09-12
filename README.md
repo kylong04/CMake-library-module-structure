@@ -40,7 +40,7 @@ Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hó
 
   - Chọn `New` và thêm đường dẫn `C:\msys64\ucrt64\bin` (Nếu cài mặc định, không thay đổi đường dẫn trong quá trình cài MSYS2) sau đó nhấn OK
 
-  - Chọn `OK` sau đó `OK` trong `Edit environment variables for your account` để Windows update môi trường variable `Path`.
+  - Chọn `OK` trong `Edit environment variables for your account` để Windows update môi trường variable `Path`.
 
   - Khởi động lại máy tính để cập nhật đường dẫn cho MinGW.
 
