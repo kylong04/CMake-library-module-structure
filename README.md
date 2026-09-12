@@ -42,7 +42,7 @@ Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hó
 
   - Chọn `OK` sau đó `OK` trong `Edit environment variables for your account` để Windows update môi trường variable `Path`.
 
-  - Restart lại máy tính.
+  - Khởi động lại máy tính để cập nhật đường dẫn cho MinGW.
 
 ## 2. Cấu trúc Dự án & Cấu hình Cmake
 ```
