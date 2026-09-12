@@ -47,7 +47,7 @@ Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hó
 ## 2. Cấu trúc Dự án & Cấu hình Cmake
 ```
  📁 Project1/
- ├── 📁 my_library/                           #Module thư viện
+ ├── 📁 my_library/                           # Module thư viện CoreLogic
  │    ├── 📁 include/
  │    │    └── 📄 CoreLogic.h
  │    ├── 📁 src/
