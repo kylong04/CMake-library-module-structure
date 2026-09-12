@@ -114,7 +114,7 @@ __Chức năng__: dùng để cấu hình ứng dụng `app`
 
 `target_link_libraries`: Sau khi tạo ra đối tượng CMake là `FinalGame` thì `FinalGame` được liên kết thư viện `my_libraryLib`.
 
-## Nội dung của các file source code và header
+## Nội dung của thư viện CoreLogic
 ### CoreLogic.h
 ```C
 #pragma once
@@ -130,6 +130,7 @@ std::string get_greeting() {
   return "Hello from the Greeter library!";
 }
 ```
+## Nội dung của mã nguồn ứng dụng
 ### main.cpp
 ```C
 #include <iostream>
