@@ -54,7 +54,7 @@ Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hó
  │    │    └── 📄 CoreLogic.cpp
  │    └── 📄 CMakeLists.txt
  │
- ├── 📁 app/                                  #Module ứng dụng
+ ├── 📁 app/                                  # Mã nguồn ứng dụng (source program application)
  │    ├── 📁 src/
  │    │    └── 📄 main.cpp
  │    └── 📄 CMakeLists.txt
