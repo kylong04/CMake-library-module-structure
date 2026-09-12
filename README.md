@@ -145,7 +145,7 @@ int main() {
 ```powershell
 mkdir build && cd build
 ```
-### Cấu hình và Khởi tạo file build
+### Cấu hình CMake
 ```powershell
 cmake -G "MinGW Makefiles" ..
 ```
