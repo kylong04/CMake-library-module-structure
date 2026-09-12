@@ -38,7 +38,7 @@ Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hó
   
   - Ở mục `User variables for ADMIN`, chọn Variable `Path` và sau đó nhấn Edit
 
-  - Chọn `New` và thêm đường dẫn `C:\msys64\ucrt64\bin` ( Nếu cài mặc định, không thay đổi đường dẫn trong quá trình cài MSYS2)
+  - Chọn `New` và thêm đường dẫn `C:\msys64\ucrt64\bin` (Nếu cài mặc định, không thay đổi đường dẫn trong quá trình cài MSYS2) sau đó nhấn OK
 
   - Chọn `OK` sau đó `OK` trong `Edit environment variables for your account` để Windows update môi trường variable `Path`.
 
