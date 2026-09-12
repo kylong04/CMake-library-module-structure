@@ -30,7 +30,7 @@ Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hó
             ```
         2. Nhấn `Enter` để đồng ý cài đặt toàn bộ số lượng gói mặc định.
 
-        3. Nhấn `Y` để đồng ý bắt đầu cái đặt.
+        3. Nhấn `Y` để đồng ý bắt đầu cài đặt.
   
         4. Thêm đường dẫn vào môi trường của Windows:
   
