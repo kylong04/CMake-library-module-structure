@@ -1,9 +1,9 @@
 # Hướng dẫn cấu hình và biên dịch dự án C++ với CMake & MinGW
 
-Dự án sử dụng thư viện my_library để build một chương trình đơn giản nhằm demo thiết kế thư viện theo hướng module hóa
+Dự án sử dụng thư viện `my_library` để build một chương trình đơn giản nhằm demo thiết kế thư viện theo hướng module hóa
 
 ## Mục tiêu
-Hướng dẫn tạo thư viện my_library với cấu hình CMake module hóa (modularization).
+Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hóa (modularization).
 
 Ưu điểm:
 
@@ -20,7 +20,7 @@ Hướng dẫn tạo thư viện my_library với cấu hình CMake module hóa 
 
 **Công cụ cần cài đặt:**
 
-- **CMake**: Tải tool tại [CMake](https://cmake.org/download/) và lựa chọn phiên bản phù hợp với hệ điều hành của máy
+- **CMake**: Tải tool tại [CMake](https://cmake.org/download/) 
 
 - **MinGW-w64**: 
     - **Cài đặt MinGW** tại [link](https://www.msys2.org/)   
@@ -30,7 +30,7 @@ Hướng dẫn tạo thư viện my_library với cấu hình CMake module hóa 
             ```
         2. Nhấn `Enter` để đồng ý cài đặt toàn bộ số lượng gói mặc định.
 
-        3. Nhấn `Y` để đồng ý bắt đầu cái đặt.
+        3. Nhấn `Y` để đồng ý bắt đầu cài đặt.
   
         4. Thêm đường dẫn vào môi trường của Windows:
   
@@ -38,23 +38,23 @@ Hướng dẫn tạo thư viện my_library với cấu hình CMake module hóa 
   
   - Ở mục `User variables for ADMIN`, chọn Variable `Path` và sau đó nhấn Edit
 
-  - Chọn `New` và thêm đường dẫn `C:\msys64\ucrt64\bin` ( Nếu cài mặc định, không thay đổi đường dẫn trong quá trình cài MSYS2)
+  - Chọn `New` và thêm đường dẫn `C:\msys64\ucrt64\bin` (Nếu cài mặc định, không thay đổi đường dẫn trong quá trình cài MSYS2) sau đó nhấn OK
 
-  - Chọn `OK` sau đó `OK` trong `Edit environment variables for your account` để Windows update môi trường variable `Path`.
+  - Chọn `OK` trong `Edit environment variables for your account` để Windows update môi trường variable `Path`.
 
-  - Restart lại máy tính.
+  - Khởi động lại máy tính để cập nhật đường dẫn cho MinGW.
 
 ## 2. Cấu trúc Dự án & Cấu hình Cmake
 ```
  📁 Project1/
- ├── 📁 my_library/                           #Module thư viện
+ ├── 📁 my_library/                           # Module thư viện CoreLogic
  │    ├── 📁 include/
  │    │    └── 📄 CoreLogic.h
  │    ├── 📁 src/
  │    │    └── 📄 CoreLogic.cpp
  │    └── 📄 CMakeLists.txt
  │
- ├── 📁 app/                                  #Module ứng dụng
+ ├── 📁 app/                                  # Mã nguồn ứng dụng (source program application)
  │    ├── 📁 src/
  │    │    └── 📄 main.cpp
  │    └── 📄 CMakeLists.txt
@@ -114,7 +114,7 @@ __Chức năng__: dùng để cấu hình ứng dụng `app`
 
 `target_link_libraries`: Sau khi tạo ra đối tượng CMake là `FinalGame` thì `FinalGame` được liên kết thư viện `my_libraryLib`.
 
-## Nội dung của các file source code và header
+## Nội dung của thư viện CoreLogic
 ### CoreLogic.h
 ```C
 #pragma once
@@ -130,6 +130,7 @@ std::string get_greeting() {
   return "Hello from the Greeter library!";
 }
 ```
+## Nội dung của mã nguồn ứng dụng
 ### main.cpp
 ```C
 #include <iostream>
@@ -145,7 +146,7 @@ int main() {
 ```powershell
 mkdir build && cd build
 ```
-### Cấu hình và Khởi tạo file build
+### Cấu hình CMake
 ```powershell
 cmake -G "MinGW Makefiles" ..
 ```
@@ -168,7 +169,7 @@ cmake -G "MinGW Makefiles" ..
 -- Generating done (0.0s)
 -- Build files have been written to: <path/to/project>/Project1/build
 ```
-### Build & Compilation
+### Biên dịch và build file thực thi
 ```powershell
 mingw32-make 
 ```
