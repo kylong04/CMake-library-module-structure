@@ -20,7 +20,7 @@ Hướng dẫn tạo thư viện `my_library` với cấu hình CMake module hó
 
 **Công cụ cần cài đặt:**
 
-- **CMake**: Tải tool tại [CMake](https://cmake.org/download/) và lựa chọn phiên bản phù hợp với hệ điều hành của máy
+- **CMake**: Tải tool tại [CMake](https://cmake.org/download/) 
 
 - **MinGW-w64**: 
     - **Cài đặt MinGW** tại [link](https://www.msys2.org/)   
