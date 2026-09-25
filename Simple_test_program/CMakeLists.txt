@@ -8,3 +8,4 @@ target_link_libraries(main_src appLib)
 
 add_executable(test_src test_program.c)
 target_link_libraries(test_src appLib)
+target_compile_options(test_src PRIVATE -Wall -Wextra -std=c99 -O0 -g)
